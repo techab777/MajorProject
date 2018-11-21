@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/user_registration_background"
+    android:gravity="center">
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_resident_name"
+            android:hint="Enter Resident Name"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="10dp"
+            android:textColorHint="#fff"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/ic_home_black_24dp"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_resident_type"
+            android:hint="Enter Resident Type"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="10dp"
+            android:textColorHint="#fff"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/ic_hotel_black_24dp"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_resident_address"
+            android:hint="Enter Resident Address"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="10dp"
+            android:textColorHint="#fff"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/ic_location_on_black_24dp"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_resident_no"
+            android:hint="Enter Resident Number"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="10dp"
+            android:textColorHint="#fff"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/ic_call_black_24dp"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <CheckBox
+        android:id="@+id/checkbox_isbathroomattach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Is Bathroom Attached"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:layout_gravity="start"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="20dp"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_submit_resident"
+        android:text="Submit"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:background="@drawable/btn_image"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+</LinearLayout>

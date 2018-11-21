@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sai.majorproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <application
+        android:name=".Utilities.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Activities.SplashScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Activities.ActivityMain"
+            android:label="Categories"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <!--User Registration-->
+       <activity
+           android:name=".Activities.UserRegistrationActivity"
+           android:theme="@style/AppTheme.NoActionBar"></activity>
+
+       <!--Service Registration-->
+        <activity android:name=".Activities.ServiceRegistrationActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <!--Resident Registration-->
+        <activity android:name=".Activities.ResidentRegistrationActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <!--Hotel/Restorent Registration-->
+        <activity android:name=".Activities.HotelRegistrationActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <!--Tourism Detail-->
+        <activity
+            android:name=".Activities.TourismDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <!--Service-->
+        <activity
+            android:name=".Activities.ServiceItemActivity"
+            android:label="Services"
+            android:theme="@style/AppTheme"></activity>
+        <!--Organization Stapper -->
+        <activity
+            android:name=".Activities.OrganizationStepperActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <!--Hotel Restorent Item-->
+        <activity
+            android:name=".Activities.HotelRestorentItemActivity"
+            android:label="Hotels and Restorent"
+            android:theme="@style/AppTheme"></activity>
+
+        <!--Education Item-->
+        <activity
+            android:name=".Activities.EducationItemActivity"
+            android:label="Education"
+            android:theme="@style/AppTheme"></activity>
+
+
+        <!--Resident Item-->
+        <activity
+            android:name=".Activities.ResidentItemActivity"
+            android:label="Residential"
+            android:theme="@style/AppTheme"></activity>
+
+        <service android:name=".Services.MyFirebaseInsatnceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Services.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Activities.TourismPlaceMapActivity"
+            android:label="@string/title_activity_tourism_place_map"></activity>
+    </application>
+
+</manifest>

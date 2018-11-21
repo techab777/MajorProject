@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Account"
+        android:id="@+id/nav_account"
+        android:icon="@drawable/ic_account_circle_black_24dp"></item>
+
+    <item android:title="Favorites"
+        android:id="@+id/nav_favorites"
+        android:icon="@drawable/ic_favorite_black_24dp"></item>
+
+    <item android:title="Add Your Bussiness"
+        android:id="@+id/nav_business"
+        android:icon="@drawable/ic_business_center_black_24dp"></item>
+
+    <item android:title="About Us"
+        android:id="@+id/nav_aboutus"
+        android:icon="@drawable/ic_info_black_24dp"></item>
+
+    <item android:title="Share"
+        android:id="@+id/nav_share"
+        android:icon="@drawable/ic_share_black_24dp"></item>
+
+    <item android:title="Logout"
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_power_settings_new_black_24dp"></item>
+
+</menu>
