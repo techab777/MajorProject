@@ -154,4 +154,10 @@ public class ActivityMain extends AppCompatActivity implements NavigationView.On
     {
 
     }
+
+
+    public void div()
+    {
+
+    }
 }
